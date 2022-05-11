@@ -1,4 +1,4 @@
-# :zap: Node Koa Data
+# :zap: Node Kafka Webhooks
 
 * Kafka client KafkaJS used with Slack bot and webhoooks to send user notification of a released NPM module
 * **Note:** to open web links in a new window use: _ctrl+click on link_
@@ -10,7 +10,7 @@
 
 ## :page_facing_up: Table of contents
 
-* [:zap: Node Koa Data](#zap-node-koa-data)
+* [:zap: Node Kafka Webhooks](#zap-node-kafka-webhooks)
   * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
   * [:books: General info](#books-general-info)
   * [:camera: Screenshots](#camera-screenshots)
@@ -36,11 +36,12 @@
 
 * [Node.js v16](https://nodejs.org/) Javascript runtime using the [Chrome V8 engine](https://v8.dev/)
 * [KafkaJS v3](https://kafka.apache.org/) event streaming; real-time data capture
+* [npm hook receiver v1](https://www.npmjs.com/package/npm-hook-receiver) to receive a package hook from the npm registry, verify its signature, and handle its payload.
 
 ## :floppy_disk: Setup
 
 * `npm i` to install dependencies
-* `npm run dev` runs app in the development mode with auto-restart.
+* `node server.js` runs app in the development mode without auto-restart.
 
 ## :wrench: Testing
 
@@ -48,34 +49,27 @@
 
 ## :computer: Code Examples
 
-* `index.js` asynchronous function to render the index page in the browser root using Koa middleware
+* tba
 
 ```javascript
-router.get("/", async (ctx) => {
-  await ctx.render("index", {
-    title: "Underground Injection Control Wells",
-    wells: wells,
-  });
-});
 ```
 
 ## :cool: Features
 
-* Uses Koa which is much lighter than the usual Express middleware
+* tba
 
 ## :clipboard: Status, Testing & To-Do List
 
-* Status: Working
-* To-Do: Add well update and delete + database connection & other db fields such as location of well etc.
+* Status: In work
+* To-Do: Complete
 
 ## :clap: Inspiration
 
-* [Oklahoma Oil Well Data](https://oklahoma.gov/occ/divisions/oil-gas/oil-gas-data.html)
-* [esparkinfo.com/blog: Express vs Koa: Which Node.js Framework Is Best For You?](https://www.esparkinfo.com/blog/express-vs-koa.html)
+* [Node.js Apache Kafka – Getting Started with KafkaJS](https://www.confluent.io/blog/getting-started-with-kafkajs/)
 
 ## :file_folder: License
 
-* This project is licensed under the terms of the MIT license.
+* N/A
 
 ## :envelope: Contact
 
