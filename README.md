@@ -1,6 +1,6 @@
 # :zap: Node Kafka Webhooks
 
-* Kafka client KafkaJS used with Slack bot and webhoooks to send user notification of a released NPM module
+* Work in progress: Kafka client KafkaJS used to interract with Confluent Cloud
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/node-kafka-webhooks?style=plastic)
@@ -26,7 +26,7 @@
 
 ## :books: General info
 
-* tba
+* Confluent Getting-started files: `producer.js` and `consumer.js` files produce and consume data via Confluent Cloud, using `getting-started.properties` & `util.js` files
 
 ## :camera: Screenshots
 
@@ -41,7 +41,9 @@
 ## :floppy_disk: Setup
 
 * `npm i` to install dependencies
-* `node server.js` runs app in the development mode without auto-restart.
+* Create account with Confluent and create a project to get API key and secret
+* Terminal 1: `node producer.js getting-started.properties` to produce data
+* Terminal 2: `node consumer.js getting-started.properties` to consume data
 
 ## :wrench: Testing
 
@@ -60,12 +62,13 @@
 
 ## :clipboard: Status, Testing & To-Do List
 
-* Status: In work
+* Status: Work in progress, basic producer/consumer files work
 * To-Do: Complete
 
 ## :clap: Inspiration
 
-* [Node.js Apache Kafka – Getting Started with KafkaJS](https://www.confluent.io/blog/getting-started-with-kafkajs/)
+* [Confluent: Getting Started with Apache Kafka and Node.js](https://developer.confluent.io/get-started/nodejs/#create-topic)
+* [What is Confluent | Jay Kreps (CEO, Confluent)](https://www.youtube.com/watch?v=VRVfx5Sf7Ug)
 
 ## :file_folder: License
 
