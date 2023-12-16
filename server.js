@@ -1,9 +1,12 @@
 require("dotenv").config();
-console.log(process.env);
 
 const createHookReceiver = require("npm-hook-receiver");
+const kafka = require('./kafka')
+
+const producer = kafka.producer()
 
 const main = async () => {
+  await producer.connect()
   const server = createHookReceiver({
     // Secret created when registering the webhook with NPM.
     // Used to validate the payload.
